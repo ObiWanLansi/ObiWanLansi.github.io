@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <canvas id="canvas" width="800" height="600" style="background-color: white; border: 2px solid lightgray" />
+    <script>
+
+        const MIN_ITEMS = 10;
+        const MAX_ITEMS = 512;
+
+        const COLORS = [
+            ['#f7fcf5', '#e5f5e0', '#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c', '#00441b'],
+            ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b'],
+            ['#ffffff', '#f0f0f0', '#d9d9d9', '#bdbdbd', '#969696', '#737373', '#525252', '#252525', '#000000'],
+            ['#fff5f0', '#fee0d2', '#fcbba1', '#fc9272', '#fb6a4a', '#ef3b2c', '#cb181d', '#a50f15', '#67000d']
+        ];
+
+        let items = MIN_ITEMS;
+        let iteration = 0;
+
+        //-------------------------------------------------------------------------------------------------------------
+
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+
+        function canvasMouseMove() {
+
+            items += 1
+
+            if (items > MAX_ITEMS) {
+                items = MIN_ITEMS
+            }
+
+            drawCircles();
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+
+        function drawCircles() {
+
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            //-----------------------------------------------------------------
+
+            ctx.font = '12px Tahoma';
+            ctx.fillStyle = 'black';
+            ctx.fillText(items, 5, 17);
+
+            //-----------------------------------------------------------------
+
+            ctx.beginPath();
+
+            for (let x = 0; x < canvas.width; x += 40) {
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+            }
+
+            for (let y = 0; y < canvas.height; y += 40) {
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+            }
+
+            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = '#D0D0D0';
+            ctx.stroke();
+
+            //-----------------------------------------------------------------
+
+            let colorset = COLORS[iteration % COLORS.length]
+
+            for (let counter = 0; counter < items; counter++) {
+
+                let center_x = getRandom(30, canvas.width - 30);
+                let center_y = getRandom(30, canvas.height - 30);
+                let radius = getRandom(5, 25)
+
+                ctx.beginPath();
+                ctx.arc(center_x, center_y, radius, 0, 360);
+                ctx.fillStyle = colorset[counter % colorset.length];
+                ctx.fill()
+                ctx.lineWidth = 0.5;
+                ctx.strokeStyle = '#A9A9A9';
+                ctx.stroke();
+            }
+
+            iteration++;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+
+        // canvas.addEventListener('mouseenter', canvasMouseEnter);
+        canvas.addEventListener('mousemove', canvasMouseMove);
+        drawCircles();
+
+        // setInterval(drawCircles, 1000);
+
+    </script>
+
+</body>
+
+</html>
