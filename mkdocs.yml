@@ -1,11 +1,12 @@
 site_name: ObiWanLansi
 site_url: ""
-site_description: ObiWanLansi
+site_description: The tools used by ObiWanLansi.
 site_author: ObiWanLansi
 use_directory_urls: false
 docs_dir: "./docs"
 plugins: []
 theme:
     name: readthedocs
+    #name: material
     nav_style: dark
     #locale: de
