@@ -12,7 +12,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "A little blog about tools";
+        var mkdocs_page_name = "Home";
         var mkdocs_page_input_path = "README.md";
         var mkdocs_page_url = null;
       </script>
@@ -31,14 +31,16 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href="index.html" class="icon icon-home"> ObiWanLansi
-        </a>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">A little blog about tools</a>
-    <ul class="current">
-    </ul>
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Home</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Brainstorming</span></p>
@@ -52,17 +54,72 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="datamining/knime.html">KNIME</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="datamining/orange.html">Orange</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="datamining/powerbi.html">Power BI</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Development</span></p>
               <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="development/eclipse.html">Eclipse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="development/java.html">Java</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="development/python.html">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="development/spyder.html">Spyder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="development/visualstudiocode.html">VisualStudio Code</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Graphics</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="graphics/gimp.html">Gimp</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics/inkscape.html">Inkscape</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics/paint.net.html">Paint .NET</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics/scribus.html">Scribus</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Office</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="office/latex.html">Latex</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="office/libreoffice.html">Libre Office</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="office/microsoftoffice.html">Microsoft Office</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Operatingsystems</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="operatingsystems/fedoralinux.html">Fedora Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="operatingsystems/linuxmint.html">Linux Mint</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="operatingsystems/raspbianos.html">Raspbian OS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="operatingsystems/ubuntulinux.html">Ubuntu Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="operatingsystems/windows11.html">Windows 11</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Terminal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/cal.html">cal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/ifconfig.html">ifconfig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/joe.html">joe</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/lolcat.html">lolcat</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/mc.html">mc</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/nmap.html">nmap</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="terminal/tree.html">tree</a>
                   </li>
               </ul>
       </div>
@@ -79,7 +136,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li class="breadcrumb-item active">A little blog about tools</li>
+      <li class="breadcrumb-item active">Home</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -88,27 +145,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="a-little-blog-about-tools">A little blog about tools</h1>
-<p>Lorem ipsum dolor sit amet, ante ipsum pharetra egestas platea
-sodales et pellentesque habitasse molestie amet laoreet. Mollis amet pede
-porttitor justo tristique tempor cum scelerisque fringilla. Shari molestie pulvinar
-sodales sed tortor interdum consequat praesent dui. Lorem lorem laoreet
-gabrielus eros ancus pharetra dapibus. Adipiscing rhoncus nasus nunc netus
-suspendisse lacus justo feugiat. Scelerisque et aliquam lobortis vivamus porta
-vel at tempus non pulvinar convallis. Rutrum sed dictumst est
-tempor tellus felix ornare mauris sem ipsum auctor nisl. Nec
-mattis magna in wisi sodales diam netus turpis lobortis. Corinnus
-consectetuer pharetra lansi in parturient congue turpis tortor molestie phasellus
-purus sodales. Sagittis fusce porttitor semper in volutpat lancer sollicitudin
-ancus. Sem lobortis condimentum feugiat wisi sinus wingtsun rhoncus. Aliquam
-sinus feugiat ancus spiritus volutpat eros habitant semper lobortis risus.
-Mauris quisque aenean duis consectetuer. Praesent purus nasus consectetuer spiritus
-pretium gravida netus id habitasse. Aliquet eu lacinia ancus orci
-sanktus adipiscing et pellentesque. Vivamus ridiculus interdum vivamus e wisi
-ornare parturient montes arcu. Cum rutrum convallis feugiat. Penatibus gravida
-feugiat faucibus commodo rhoncus. Consequat eros pellentesque shari vivamus parturient
-ut aliquet spiritus dolor suscipit. Maecenas quis leo feugiat ac
-ante senectus lansi non odio elit suspendisse eleifend. Venenatis sanktus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Quis nisi illo quod perspiciatis rem fugiat sapiente officia, reiciendis ducimus itaque sunt quae ut magnam nemo, nam distinctio fugiat illum iure ipsum similique qui sapiente accusamus ad necessitatibus, atque fuga facere magnam id rerum laboriosam eveniet distinctio, ad ex excepturi nemo esse amet cumque et iure sunt debitis pariatur. Earum illo quaerat atque labore repellat ullam, temporibus repellat inventore architecto in praesentium ratione nihil vel aspernatur, ipsum praesentium esse debitis quos?
+Quae aliquam reiciendis vero, quisquam quo excepturi ullam mollitia exercitationem, tempora vitae blanditiis earum ea voluptatem harum facere vero neque, ab expedita libero quia a numquam nisi fugiat dolor corrupti. Impedit cum soluta eos porro dolorum corrupti inventore eveniet rerum, illum repellendus dolor velit nesciunt consequatur corporis in porro natus esse ab, obcaecati rem delectus laudantium, culpa quia aliquam fugit ipsam aspernatur numquam obcaecati. Dignissimos iste ratione ea possimus optio quae sed maiores repellendus, rerum ipsa odio in velit vel porro labore molestias provident temporibus, laudantium corrupti facere harum ex doloribus voluptas earum.
+Praesentium veniam et aspernatur pariatur, harum suscipit iure, ad accusantium cumque debitis labore, tempore laborum dolorum tenetur rerum quisquam similique pariatur, voluptas illo harum ipsum maxime hic eos accusamus. Et repellendus sed atque accusantium tempore, error eius porro asperiores non praesentium sequi recusandae explicabo architecto ea, corporis perferendis provident est non nesciunt vel ratione minima dolores, aliquid ea officiis error, dolorem provident repellendus porro distinctio animi? Reprehenderit illum quis aliquid quidem recusandae saepe, cum fugiat reiciendis illo quo soluta totam corrupti doloribus, delectus facere distinctio similique voluptatem minus. Repudiandae dolorem commodi magnam minus explicabo inventore natus, ea quas at quaerat dolor modi minima quos dolorem libero, nostrum consectetur voluptates accusamus vero quaerat assumenda omnis, nobis cupiditate ex totam adipisci ullam quidem saepe recusandae ipsam, harum repudiandae quaerat inventore molestias suscipit sint delectus.
+Et pariatur eos consequuntur iste neque iusto officiis maxime similique, ab blanditiis corrupti dolor quam omnis assumenda ex? Ad veniam quis repellendus repudiandae, placeat consectetur commodi suscipit odio esse ducimus repellendus, doloremque necessitatibus aliquam ratione error? Voluptates consectetur ipsum doloremque laborum, adipisci at consequuntur enim, deserunt nobis possimus veritatis. Architecto veritatis doloremque tempore commodi repellat accusamus cupiditate, quidem iusto non beatae ullam illum odio nisi debitis rem sunt fugit, neque dolorem ipsa commodi odio est amet nihil nulla error aperiam, iure est adipisci necessitatibus eos animi nihil iste.
+Aliquid earum corporis quibusdam vero tenetur amet repudiandae, fugiat reiciendis ad quis unde, incidunt ducimus unde doloribus nihil tempora similique, corrupti incidunt inventore recusandae a hic asperiores debitis dolorum vel? Eveniet quis quibusdam dolorem facere repellendus voluptates, velit commodi veniam, rerum voluptatum quod error laudantium nulla harum quam fugiat sed consectetur nam? Odio error earum dolore saepe minus aspernatur hic placeat alias, eligendi minus fuga laborum, molestiae iste minus temporibus nam soluta quasi odit, perspiciatis reprehenderit inventore culpa rem id dolores blanditiis modi accusantium provident, tempore cum at ducimus commodi porro vero quibusdam dolorum autem?
+Dolores eos maiores consequatur sapiente quasi debitis nemo id quaerat quae perferendis, possimus voluptatem laboriosam explicabo, vel doloremque aliquam vitae, explicabo aliquid consequuntur sequi esse corporis saepe officia, neque laborum quidem odit natus esse sed ducimus velit perferendis saepe. Illum assumenda animi amet reprehenderit dicta nam sit odio consequatur distinctio, ipsum aperiam dicta animi expedita non at facere ipsam tenetur accusamus, dolor aspernatur culpa corrupti, asperiores commodi pariatur sunt quia sequi assumenda quod fugit officiis nostrum, fugiat sequi earum nam harum ducimus? Totam asperiores doloremque nesciunt laboriosam repudiandae voluptatem reiciendis voluptates atque at, voluptatem perspiciatis illum laborum magnam eaque ex, accusamus a hic quae sed totam veniam, recusandae provident nihil natus hic rerum optio sunt, voluptate minima incidunt cupiditate culpa reiciendis tenetur neque maiores numquam reprehenderit ab.
+Voluptate debitis corrupti eaque nam, saepe magni commodi, odio ex atque? Quia voluptatum omnis illo, perferendis inventore molestiae debitis atque odit quo quas sit qui laudantium. Illo fugit velit amet earum, repudiandae laborum libero id vel illum odio velit optio, nobis non ratione, illo odit repellendus sit error tempora ea?
+Ea vitae natus aliquid reiciendis quae nisi, blanditiis suscipit voluptatum maxime fuga saepe eius rem illo distinctio neque? Pariatur corporis quia alias eum distinctio deserunt minus magnam animi error reiciendis, omnis accusantium voluptatem atque perspiciatis impedit mollitia reiciendis asperiores laudantium, tempora sint voluptas ipsam doloribus modi quo suscipit recusandae nobis, voluptatibus ducimus aut accusantium laboriosam atque itaque, provident quibusdam excepturi sequi repellendus harum omnis? Iure deleniti fugit, eligendi tempora doloremque, repellat quod ullam, quibusdam magnam rem accusantium commodi eaque dicta consequatur quos enim ratione non, eum blanditiis tenetur expedita iste cum corrupti soluta reprehenderit? Autem facilis illum cum culpa voluptatum magnam molestias quasi iure doloremque, ipsam tempore repellat rerum odio porro deserunt ullam autem quos eligendi.
+Excepturi suscipit fuga optio blanditiis animi placeat, perspiciatis nulla repellat velit deleniti sit molestias quisquam cumque suscipit perferendis doloremque. Dolorum enim iste ipsam illo, deserunt harum blanditiis animi id dolorum tenetur sit possimus nemo officia a, dolores nihil totam beatae consectetur sunt fuga voluptatem. Ab modi vero ipsam, eaque laboriosam asperiores, reprehenderit porro modi aperiam, mollitia ipsum ex?</p>
               
             </div>
           </div><footer>
@@ -145,6 +191,7 @@ ante senectus lansi non odio elit suspendisse eleifend. Venenatis sanktus.</p>
     <script>var base_url = ".";</script>
     <script src="js/theme_extra.js"></script>
     <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
@@ -156,5 +203,5 @@ ante senectus lansi non odio elit suspendisse eleifend. Venenatis sanktus.</p>
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2023-08-12 19:06:45.276979+00:00
+Build Date UTC : 2023-08-30 10:48:43.789111+00:00
 -->
